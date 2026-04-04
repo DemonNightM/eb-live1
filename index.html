@@ -192,7 +192,7 @@
             }
 
             try {
-                const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&type=video&q=${encodeURIComponent(API_CONFIG.search)}&key=${API_CONFIG.key}&maxResults=15&order=viewCount`;
+                const url = `https://www.googleapis.com/youtube/v3/search?part=snippet&eventType=live&type=video&q=${encodeURIComponent(API_CONFIG.search)}&key=${API_CONFIG.key}&maxResults=50&order=viewCount`;
                 const res = await fetch(url);
                 const data = await res.json();
 
